@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.p {
+    background-image: url(./img/p.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+
+.op {
+    background-image: url(./img/op.png)
+}
+
+.header {
+    top: 20px;
+    font-size: 64px;
+    animation: size 2s infinite ease-in-out;
+}
+
+.score {
+    top: 110px;
+    font-size: 42px;
+}
+
+.hehe {
+    position: absolute
+}
+
+.vxnn {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    font-size: 24px
+}
+
+.wtf {
+    animation: wtf 0.2s ease-in-out;
+}
+
+.wtf1 {
+    animation: wtf1 0.2s ease-in-out;
+}
+
+.wtf2 {
+    animation: wtf2 0.2s ease-in-out;
+}
+
+@keyframes wtf {
+    from {transform: scale(1)}
+    50% {transform: scale(1.15) rotate(12deg)}
+    to {transform: scale(1)}
+}
+
+@keyframes wtf1 {
+    from {transform: scale(1)}
+    50% {transform: scale(1.18) rotate(-15deg)}
+    to {transform: scale(1)}
+}
+
+@keyframes wtf2 {
+    from {transform: scale(1)}
+    50% {transform: scale(1.3) rotate(2deg)}
+    to {transform: scale(1)}
+}
+
+@keyframes size {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {transform: scale(1.1) rotate(6deg)}
+    50% {transform: scale(1) rotate(0deg)}
+    75% {transform: scale(1.1) rotate(-6deg)}
+    to {transform: scale(1) rotate(0deg)}
+}
